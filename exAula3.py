@@ -3,4 +3,4 @@ b = 20
 
 soma = a + b
 
-print("A soma é", soma)
+print("A soma do números é", soma)
