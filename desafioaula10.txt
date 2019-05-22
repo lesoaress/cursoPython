@@ -1,0 +1,1 @@
+Dado um número você tem que dizer se esse número tem dois digitos adjacentes iguais, ex: 314225 (2 e 2, são dois digitos adjacentes iguais)
