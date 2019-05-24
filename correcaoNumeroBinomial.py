@@ -32,3 +32,15 @@ def testa_fatorial():
         print("Funciona para 5")
     else:
         print("Não funciona para 5")
+
+def testa_numero_binomial():
+    if numero_binomial(5,3) == 10:
+        print("Funciona para 5 e 3")
+    else:
+        print("Não funciona para 5 e 3")
+
+    if numero_binomial(8, 4) == 70:
+        print("Funciona para 8 e 4")
+    else:
+        print("Não funciona para 8 e 4") 
+        
