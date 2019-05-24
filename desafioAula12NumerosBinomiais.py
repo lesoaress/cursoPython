@@ -1,16 +1,8 @@
 def fatorial(numero):
-    numero_str = str(numero)
-    tamanho_numero = len(numero_str)
-    i = 0
     fatorial = 1
-    
-    if tamanho_numero == 1:
-        fatorial = numero
-    else:
-        while i < tamanho_numero:
-            fatorial = fatorial * numero
-            numero = numero//10
-            i+=1
+    while numero > 1:
+        fatorial = fatorial * numero
+        numero = numero - 1
 
     return fatorial
     
