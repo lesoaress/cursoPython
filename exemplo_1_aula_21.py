@@ -9,18 +9,10 @@ def primo(x):
     else:
         return True
     
-n = int(input("Informe um número inteiro positivo: "))
+limite = int(input("Limite máximo: "))
+n = 2
 
-while n > 0:
+while n < limite:
     if primo(n):
-        print(True)
-    else:
-        print(False)
-    n = int(input("Informe um número inteiro positivo: "))
-    
-
-        
-        
-        
-
- 
+        print(n, end=", ")
+    n += 1
