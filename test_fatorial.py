@@ -8,17 +8,14 @@ def fatorial (n):
         i = i + 1
     return fat
 
-def test_fatorial_0():
-    assert fatorial(0) == 1
+import pytest
 
-def test_fatorial_1():
-    assert fatorial(1) == 1
-
-def test_fatorial_negativo():
-    assert fatorial(-10) == 0
-
-def test_fatorial_4():
-    assert fatorial(4) == 24
-
-def test_fatorial_5():
-    assert fatorial(5) == 120
+@pytest.mark.parametrize("entrada, esperado", [
+    (0, 1),
+    (1, 1),
+    (-10, 0),
+    (4, 24),
+    (5, 120)])
+                         
+def test_fatorial(entrada, esperado):
+    assert fatorial(entrada) == esperado
